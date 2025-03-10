@@ -5,18 +5,18 @@ A flexible and customizable table component for React Native applications.
 ## Installation
 
 ```bash
-npm install react-native-flex-table
+npm install  @harshrathore5/react-native-flex-table
 ```
 or 
 ```bash
-yarn add react-native-flex-table
+yarn add @harshrathore5/react-native-flex-table
 ```
 
 
 ## Usage
 
 ```javascript
-import { Table } from 'react-native-flex-table';
+import { Table } from '@harshrathore5/react-native-flex-table';
 
 // Example data
 const data = [
