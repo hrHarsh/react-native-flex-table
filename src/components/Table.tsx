@@ -83,7 +83,7 @@ export const Table: React.FC<TableProps> = ({
               onPress={() => handleSort(column)}
               style={[
                 styles.headerCell,
-                column.width && { width: column.width },
+                column.width ? { width: column.width } : undefined,
               ]}
             >
               <View style={styles.headerContent}>
@@ -126,7 +126,7 @@ export const Table: React.FC<TableProps> = ({
                   key={column.key}
                   style={[
                     styles.cell,
-                    column.width && { width: column.width },
+                    column.width ? { width: column.width } : undefined,
                     cellStyle,
                   ]}
                   onPress={() => onCellPress?.(record[column.key], record, column)}

@@ -23,9 +23,12 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
           onPress={() => handleSort(column)}
           style={[
             styles.headerCell,
-            column.width && { width: column.width },
-            column.align && { justifyContent: column.align },
-            column.fixed && styles[`fixed${column.fixed}`],
+            column.width ? { width: column.width } : undefined,
+            column.align ? { 
+              justifyContent: column.align === 'left' ? 'flex-start' : 
+                            column.align === 'right' ? 'flex-end' : 'center' 
+            } : undefined,
+            column.fixed ? styles[`fixed${column.fixed}`] : undefined,
           ]}
         >
           <View style={styles.headerContent}>

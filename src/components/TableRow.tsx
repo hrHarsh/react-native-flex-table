@@ -41,9 +41,12 @@ export const TableRow: React.FC<TableRowProps> = ({
           key={column.key}
           style={[
             styles.cell,
-            column.width && { width: column.width },
-            column.align && { justifyContent: column.align },
-            column.fixed && styles[`fixed${column.fixed}`],
+            column.width ? { width: column.width } : undefined,
+            column.align ? { 
+              justifyContent: column.align === 'left' ? 'flex-start' : 
+                            column.align === 'right' ? 'flex-end' : 'center' 
+            } : undefined,
+            column.fixed ? styles[`fixed${column.fixed}`] : undefined,
             cellStyle,
           ]}
           onPress={() => onCellPress?.(record[column.key], record, column)}

@@ -1,6 +1,6 @@
 {
-  "name": "react-native-flex-table",
-  "version": "1.0.0",
+  "name": "@harshrathore5/react-native-flex-table",
+  "version": "1.0.1",
   "description": "A highly customizable table component for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,12 +22,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harsh-rathore/react-native-flex-table.git"
+    "url": "git+https://github.com/hrHarsh/react-native-flex-table.git"
   },
   "bugs": {
-    "url": "https://github.com/harsh-rathore/react-native-flex-table/issues"
+    "url": "https://github.com/hrHarsh/react-native-flex-table/issues"
   },
-  "homepage": "https://github.com/harsh-rathore/react-native-flex-table#readme",
+  "homepage": "https://github.com/hrHarsh/react-native-flex-table#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.60.0"

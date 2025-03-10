@@ -72,13 +72,13 @@ export const styles = StyleSheet.create({
     color: '#999999',
   },
   fixedleft: {
-    position: 'sticky',
+    position: 'relative',
     left: 0,
     backgroundColor: '#FFFFFF',
     zIndex: 1,
   },
   fixedright: {
-    position: 'sticky',
+    position: 'relative',
     right: 0,
     backgroundColor: '#FFFFFF',
     zIndex: 1,
